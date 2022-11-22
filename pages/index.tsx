@@ -1,7 +1,8 @@
 import { GetServerSideProps, NextPage } from "next";
+import { Home } from "src/modules/home";
 
 const Page: NextPage = () => {
-  return <div>hello world</div>;
+  return <Home />;
 };
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
