@@ -10,7 +10,7 @@ export const BaseLayout: React.FC<BaseLayoutProps> = ({
   return (
     <div
       className={twMerge(
-        "w-full min-h-screen bg-slate-50 overflow-x-hidden",
+        "w-full min-h-screen overflow-x-hidden",
         className
       )}
     >

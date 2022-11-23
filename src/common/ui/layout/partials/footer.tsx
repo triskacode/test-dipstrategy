@@ -1,7 +1,7 @@
-import Logo from "src/common/assets/logo.png";
+import Logo from "src/common/assets/images/logo.png";
+import ArrowUpRight from "src/common/assets/icons/arrow-up-right.png";
 import Image from "next/image";
 import React from "react";
-import { HiArrowUpRight } from "react-icons/hi2";
 import { twMerge } from "tailwind-merge";
 
 interface FooterProps extends React.HTMLAttributes<HTMLDivElement> {}
@@ -60,7 +60,11 @@ const FooterElement: React.ForwardRefRenderFunction<
                   placeholder="e-mail"
                 />
                 <button>
-                  <HiArrowUpRight className="w-[75px] h-[75px]" />
+                  <Image
+                    src={ArrowUpRight}
+                    alt="..."
+                    className="w-[75px] h-[75px] mb-[6px]"
+                  />
                 </button>
               </div>
               <div className="max-w-[400px]">
