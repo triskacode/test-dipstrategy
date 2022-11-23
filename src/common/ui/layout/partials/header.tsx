@@ -1,4 +1,4 @@
-import Logo from "src/common/assets/logo.png";
+import Logo from "src/common/assets/images/logo.png";
 import Image from "next/image";
 import React from "react";
 import { twMerge } from "tailwind-merge";
