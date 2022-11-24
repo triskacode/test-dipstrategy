@@ -2,6 +2,7 @@ import ArrowUpRight from "src/common/assets/icons/arrow-up-right.png";
 import ArrowUpRightWhite from "src/common/assets/icons/arrow-up-right-white.png";
 import BgHero1 from "src/common/assets/images/bg-1.png";
 import BgServices from "src/common/assets/images/bg-services.png";
+import BgAboutUs from "src/common/assets/images/bg-about-us.png";
 import Diagram from "src/common/assets/images/diagram.png";
 import Exam from "src/common/assets/images/exam.png";
 import Coding from "src/common/assets/images/coding.png";
@@ -9,18 +10,25 @@ import People from "src/common/assets/images/people.png";
 import DHome from "src/common/assets/images/d-home.png";
 import WHome from "src/common/assets/images/w-home.png";
 import WWorkflow from "src/common/assets/images/w-workflow.png";
+import WPortfolioRight from "src/common/assets/images/w-portfolio-right.png";
+import WPortfolioLeft from "src/common/assets/images/w-portfolio-left.png";
 import HanaMobile from "src/common/assets/images/hana-mobile.png";
 import HanaDesktop from "src/common/assets/images/hana-desktop.png";
 import UtviMobile from "src/common/assets/images/utvi-mobile.png";
 import UtviDesktop from "src/common/assets/images/utvi-desktop.png";
+import BasfMobile from "src/common/assets/images/basf-mobile.png";
+import BasfDesktop from "src/common/assets/images/basf-desktop.png";
+import EcommerceHome from "src/common/assets/images/ecommerce-home.png";
+import EcommerceCheckout from "src/common/assets/images/ecommerce-checkout.png";
 import PlusDecoration from "src/common/assets/images/plus-decoration.png";
 import CircleDecoration from "src/common/assets/images/circle-decoration.png";
 import RectangleDecoration from "src/common/assets/images/rectangle-decoration.png";
+import AboutUsVideo from "src/common/assets/images/about-us-video.png";
 
 import Image from "next/image";
 import React from "react";
 import { AiOutlinePlus } from "react-icons/ai";
-import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
+import { BsArrowLeft, BsArrowRight, BsPlayFill } from "react-icons/bs";
 import { Container } from "./partials/container";
 
 interface HomeProps {}
@@ -656,6 +664,9 @@ export const Home: React.FC<HomeProps> = () => {
           </div>
         </div>
         <div className="relative">
+          <div className="absolute right-0 top-[100px]">
+            <Image src={WPortfolioRight} alt="..." />
+          </div>
           <div className="h-full w-full max-w-[var(--container-width)] grid grid-cols-[650px_1fr] items-center gap-x-[90px] px-[var(--container-px)] py-[100px] mx-auto">
             <div>
               <h3 className="text-[26px] leading-[33px] text-[#B6B6B6] uppercase mb-[20px]">
@@ -700,12 +711,12 @@ export const Home: React.FC<HomeProps> = () => {
                 className="absolute top-[-20px] left-[-100px] w-[310px] h-[150px]"
               />
               <Image
-                src={HanaDesktop}
+                src={BasfDesktop}
                 alt="..."
                 className="absolute top-[50px] left-[170px] w-[820px] h-[500px]"
               />
               <Image
-                src={HanaMobile}
+                src={BasfMobile}
                 alt="..."
                 className="absolute top-[15px] left-0 w-[275px] h-[565px]"
               />
@@ -713,9 +724,12 @@ export const Home: React.FC<HomeProps> = () => {
           </div>
         </div>
         <div className="relative">
+          <div className="absolute left-0 top-[120px]">
+            <Image src={WPortfolioLeft} alt="..." />
+          </div>
           <div className="h-full w-full max-w-[var(--container-width)] grid grid-cols-[1fr_800px] items-center gap-x-[90px] px-[var(--container-px)] py-[100px] mx-auto">
             <div className="relative w-full h-[920px] ">
-              <div className="absolute bottom-[20px] left-[340px] w-[175px] h-[175px]">
+              <div className="absolute bottom-[-20px] left-[320px] w-[175px] h-[175px]">
                 <Image
                   src={CircleDecoration}
                   alt="..."
@@ -730,25 +744,25 @@ export const Home: React.FC<HomeProps> = () => {
               <Image
                 src={PlusDecoration}
                 alt="..."
-                className="absolute top-[50px] right-[40px] w-[310px] h-[150px]"
+                className="absolute top-0 right-[40px] w-[310px] h-[150px]"
               />
               <Image
-                src={UtviDesktop}
+                src={EcommerceCheckout}
                 alt="..."
-                className="absolute top-[130px] left-[300px] w-[525px] h-[640px]"
+                className="absolute top-[10px] left-[350px] w-[375px] h-[810px]"
               />
               <Image
-                src={UtviMobile}
+                src={EcommerceHome}
                 alt="..."
-                className="absolute top-[15px] left-0 w-[450px] h-[900px]"
+                className="absolute top-[15px] left-0 w-[500px] h-[940px]"
               />
             </div>
             <div>
               <h3 className="text-[26px] leading-[33px] text-[#B6B6B6] uppercase mb-[20px]">
-                Custom App Development
+                E-Commerce Development
               </h3>
               <h2 className="text-[58px] leading-[58px] mb-[5px]">
-                <span className="block">UTVI PWA</span>
+                <span className="block">Open Fashion Mobile App</span>
               </h2>
               <ol className="list-inside list-decimal text-[21px] leading-[38px] mb-[35px]">
                 <li>2021 App Award Winner for Best Maid App</li>
@@ -766,6 +780,91 @@ export const Home: React.FC<HomeProps> = () => {
                   className="w-[18px] h-[18px]"
                 />
               </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="relative">
+        <div className="absolute w-full h-[625px] bottom-0 bg-[#060606]">
+          <Image
+            src={BgAboutUs}
+            alt="..."
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <div className="relative h-full w-full max-w-[var(--container-width)] grid grid-cols-[740px_1fr] gap-x-[120px] px-[var(--container-px)] pt-[100px] mx-auto">
+          <div>
+            <div className="mt-[45px] mb-[35px]">
+              <h1 className="text-[90px] leading-[90px] uppercase">About Us</h1>
+            </div>
+            <div className="min-h-[625px] pt-[55px] text-white">
+              <p className="text-[20px] leading-[28px] max-w-[720px] mb-[28px]">
+                Hardianto is a name of person work in =digital agency based in
+                Jakarta. Founder Novi Hardianto decided to go into business for
+                himself, using his vast experience in software engineering and
+                numerous ancillary fields to help people perfect their web
+                presence and get seen.
+              </p>
+              <p className="text-[20px] leading-[28px] max-w-[720px] mb-[30px]">
+                In setting up the company, he was able to rely on his vast
+                experience from previous entrepreneurial activities and
+                therefore knows what matters
+              </p>
+              <button className="flex gap-x-[45px] items-center py-[16px] px-[20px] bg-[#FFFE55] text-black">
+                <span className="text-[15px] uppercase">See More</span>
+                <Image
+                  src={ArrowUpRight}
+                  alt="..."
+                  className="w-[18px] h-[18px]"
+                />
+              </button>
+            </div>
+          </div>
+          <div>
+            <div className="relative flex items-center justify-center">
+              <Image src={AboutUsVideo} alt="..." />
+              <button className="absolute flex w-[80px] h-[80px] items-center justify-center rounded-full bg-white">
+                <BsPlayFill className="text-[40px] ml-1" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="relative">
+        <div className="h-full w-full max-w-[var(--container-width)] flex flex-col px-[var(--container-px)] mx-auto">
+          <div className="absolute left-0 right-0 top-[-130px] w-full max-w-[var(--container-width)] flex items-center justify-between px-[var(--container-px)] mx-auto text-white">
+            <div>
+              <h1 className="text-[90px] leading-[90px] uppercase">
+                Our magic team
+              </h1>
+            </div>
+            <div>
+              <button className="flex gap-x-[45px] items-center py-[16px] px-[20px] bg-[#FFFE55] text-black">
+                <span className="text-[15px] uppercase">See More</span>
+                <Image
+                  src={ArrowUpRight}
+                  alt="..."
+                  className="w-[18px] h-[18px]"
+                />
+              </button>
+            </div>
+          </div>
+          <div className="pt-[40px]">
+            <div className="max-w-[1100px] mb-[40px]">
+              <p className="text-[20px] leading-[28px] mb-[28px]">
+                Wolven D.O.O. is a small digital agency based in Serbia. Founder
+                Dave McGowan decided to go into business for himself, using his
+                vast experience in software engineering and numerous ancillary
+                fields to help people perfect their web presence and get seen.
+              </p>
+              <p className="text-[20px] leading-[28px]">
+                In setting up the company, he was able to rely on his vast
+                experience from previous entrepreneurial activities and
+                therefore knows what matters
+              </p>
+            </div>
+            <div className="flex flex-wrap gap-x-[60px]">
+              <div></div>
             </div>
           </div>
         </div>
