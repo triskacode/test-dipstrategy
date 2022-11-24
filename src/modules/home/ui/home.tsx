@@ -1140,7 +1140,7 @@ export const Home: React.FC<HomeProps> = () => {
             </div>
           </div>
           <div className="bg-black px-[60px] py-[75px]">
-            <form className="flex flex-col">
+            <form className="flex flex-col text-white">
               <input
                 type="text"
                 className="flex-auto py-[14px] bg-transparent border-b border-white placeholder:uppercase placeholder:text-[rgba(255,255,255,0.5)] focus-within:outline-0 mb-[60px]"
