@@ -24,10 +24,15 @@ import PlusDecoration from "src/common/assets/images/plus-decoration.png";
 import CircleDecoration from "src/common/assets/images/circle-decoration.png";
 import RectangleDecoration from "src/common/assets/images/rectangle-decoration.png";
 import AboutUsVideo from "src/common/assets/images/about-us-video.png";
+import Person1 from "src/common/assets/images/__mock__/1.png";
+import Person2 from "src/common/assets/images/__mock__/2.png";
+import Person3 from "src/common/assets/images/__mock__/3.png";
+import Person4 from "src/common/assets/images/__mock__/4.png";
 
 import Image from "next/image";
 import React from "react";
 import { AiOutlinePlus } from "react-icons/ai";
+import { FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import { BsArrowLeft, BsArrowRight, BsPlayFill } from "react-icons/bs";
 import { Container } from "./partials/container";
 
@@ -863,9 +868,305 @@ export const Home: React.FC<HomeProps> = () => {
                 therefore knows what matters
               </p>
             </div>
-            <div className="flex flex-wrap gap-x-[60px]">
-              <div></div>
+            <div className="flex flex-wrap gap-x-[60px] mb-[100px]">
+              <div>
+                <Image
+                  src={Person1}
+                  alt="..."
+                  className="h-[333px] object-cover object-top"
+                />
+                <div className="p-[30px] bg-[#FFFE55]">
+                  <div className="flex flex-col mb-[15px]">
+                    <span className="block text-[26px] leading-[33px] uppercase mb-[8px]">
+                      Sam Flex
+                    </span>
+                    <span className="block text-[15px] leading-[21px]">
+                      Director
+                    </span>
+                  </div>
+                  <div className="flex gap-x-[20px]">
+                    <button>
+                      <FaLinkedinIn className="text-[20px]" />
+                    </button>
+                    <button>
+                      <FaFacebookF className="text-[20px]" />
+                    </button>
+                    <button>
+                      <FaTwitter className="text-[20px]" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <Image src={Person2} alt="..." />
+                <div className="p-[30px] bg-[#FFFE55]">
+                  <div className="flex flex-col mb-[15px]">
+                    <span className="block text-[26px] leading-[33px] uppercase mb-[8px]">
+                      Kate Larson
+                    </span>
+                    <span className="block text-[15px] leading-[21px]">
+                      Manager
+                    </span>
+                  </div>
+                  <div className="flex gap-x-[20px]">
+                    <button>
+                      <FaLinkedinIn className="text-[20px]" />
+                    </button>
+                    <button>
+                      <FaFacebookF className="text-[20px]" />
+                    </button>
+                    <button>
+                      <FaTwitter className="text-[20px]" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <Image
+                  src={Person3}
+                  alt="..."
+                  className="h-[365px] object-cover object-top"
+                />
+                <div className="p-[30px] bg-[#FFFE55] flex justify-between">
+                  <div className="flex flex-row items-end gap-x-[20px]">
+                    <span className="block text-[26px] leading-[33px] uppercase">
+                      Bobby Fish
+                    </span>
+                    <span className="block text-[15px] leading-[21px]">
+                      Designer
+                    </span>
+                  </div>
+                  <div className="flex gap-x-[20px]">
+                    <button>
+                      <FaLinkedinIn className="text-[20px]" />
+                    </button>
+                    <button>
+                      <FaFacebookF className="text-[20px]" />
+                    </button>
+                    <button>
+                      <FaTwitter className="text-[20px]" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <Image src={Person4} alt="..." />
+                <div className="p-[30px] bg-[#FFFE55]">
+                  <div className="flex flex-col mb-[75px]">
+                    <span className="block text-[26px] leading-[33px] uppercase mb-[8px]">
+                      Amanda James
+                    </span>
+                    <span className="block text-[15px] leading-[21px]">
+                      Programmer
+                    </span>
+                  </div>
+                  <div className="flex gap-x-[20px]">
+                    <button>
+                      <FaLinkedinIn className="text-[20px]" />
+                    </button>
+                    <button>
+                      <FaFacebookF className="text-[20px]" />
+                    </button>
+                    <button>
+                      <FaTwitter className="text-[20px]" />
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
+        </div>
+      </div>
+      <div className="bg-[#060606] text-white">
+        <div className="h-full w-full max-w-[var(--container-width)] flex flex-col px-[var(--container-px)] py-[100px] mx-auto">
+          <div className="mb-[70px]">
+            <h1 className="text-[90px] uppercase">Our Value</h1>
+          </div>
+          <div className="grid grid-cols-3 gap-x-[200px]">
+            <div className="">
+              <div className="mb-[20px]">
+                <h3 className="text-[32px] leading-[41px] text-[#C4C4C4]">
+                  Transparency
+                </h3>
+              </div>
+              <div className="h-[220px] flex flex-col justify-center items-center border border-[#E5E5E5] mb-[35px]">
+                <div className="flex [&>div]:w-[40px] [&>div]:h-[40px] even:[&>div]:bg-[#D9D9D9] opacity-40">
+                  <div />
+                  <div />
+                  <div />
+                  <div />
+                  <div />
+                </div>
+                <div className="flex [&>div]:w-[40px] [&>div]:h-[40px] odd:[&>div]:bg-[#D9D9D9]">
+                  <div />
+                  <div />
+                  <div />
+                  <div />
+                  <div />
+                </div>
+                <div className="flex [&>div]:w-[40px] [&>div]:h-[40px] even:[&>div]:bg-[#D9D9D9] opacity-40">
+                  <div />
+                  <div />
+                  <div />
+                  <div />
+                  <div />
+                </div>
+              </div>
+              <div className="text-[32px] leading-[40px] text-[#C4C4C4]">
+                <p className="mb-[40px]">
+                  The goal of Wolven D.O.O. is to get as close as possible to
+                  the ideal of a &ldquo;glass company&rdquo;.
+                </p>
+                <p>
+                  Our key to this is clear communication with our customers as
+                  well as the disclosure of our workflows and the permanent
+                  involvement of the customer in the creative processes.
+                </p>
+              </div>
+            </div>
+            <div className="">
+              <div className="mb-[20px]">
+                <h3 className="text-[32px] leading-[41px] text-[#C4C4C4]">
+                  Accountability
+                </h3>
+              </div>
+              <div className="h-[220px] flex justify-center items-center border border-[#E5E5E5] mb-[35px] [&>div]:w-[55px] [&>div]:h-[125px] [&>div]:flex [&>div]:justify-center [&>div]:items-center [&>div]:border-l [&>div]:border-[#FFFFFF]">
+                <div>
+                  <div className="w-[16px] h-[64px] bg-[#5A5A5A]" />
+                </div>
+                <div>
+                  <div className="w-[16px] h-[22px] bg-[#5A5A5A]" />
+                </div>
+                <div>
+                  <div className="w-[16px] h-[40px] bg-[#5A5A5A]" />
+                </div>
+              </div>
+              <div className="text-[32px] leading-[40px] text-[#C4C4C4]">
+                <p className="mb-[40px]">
+                  We are your competent partner for web development and
+                  everything that goes with it.
+                </p>
+                <p>
+                  That means we don&rsquo;t just make empty promises, but
+                  deliver measurable results as well as real added value.
+                </p>
+              </div>
+            </div>
+            <div className="">
+              <div className="mb-[20px]">
+                <h3 className="text-[32px] leading-[41px] text-[#C4C4C4]">
+                  Dedication
+                </h3>
+              </div>
+              <div className="h-[220px] flex justify-center items-center border border-[#E5E5E5] mb-[35px]">
+                <div className=" flex justify-center items-end [&>div]:w-[55px] [&>div]:flex [&>div]:justify-center [&>div]:items-end divide-x divide-[#FFFFFF]">
+                  <div>
+                    <div className="w-[25px] h-[35px] bg-[#5A5A5A]" />
+                  </div>
+                  <div className="h-[55px]">
+                    <div className="w-[25px] h-[65px] bg-[#5A5A5A]" />
+                  </div>
+                  <div className="h-[90px]">
+                    <div className="w-[25px] h-[105px] bg-[#5A5A5A]" />
+                  </div>
+                </div>
+              </div>
+              <div className="text-[32px] leading-[40px] text-[#C4C4C4]">
+                <p className="mb-[40px]">
+                  Just being good at something is one side.
+                </p>
+                <p>
+                  But for truly perfect results and content that converts, it
+                  takes people who put their heart and soul into every project
+                  until you as our client and partner, are 100% satisfied.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div className="h-full w-full max-w-[var(--container-width)] grid grid-cols-[900px_1fr] px-[var(--container-px)] py-[55px] mx-auto">
+          <div className="h-full flex flex-col">
+            <div className="mb-[20px]">
+              <h1 className="text-[90px] leading-[90px] uppercase">
+                Get in Touch
+              </h1>
+            </div>
+            <div className="max-w-[800px] mb-[75px]">
+              <p className="text-[24px] leading-[33px]">
+                Looking to talk to us directly, or planning an office visit? As
+                Digital Agency, Dipstrategy start by understanding your business
+                need to comes up with any solutions. That&rsquo;s why it is
+                important for us to hear your story. When it come to listening
+                to your story, we are all ears.
+              </p>
+            </div>
+            <div className="flex-auto flex flex-col justify-between">
+              <div className="mb-[60px]">
+                <p className="text-[24px] leading-[33px] mb-[20px]">
+                  Gd. Titan lt.3, Jl. Slamet Riyadi no.7, Jakarta 13150 -
+                  Indonesia
+                </p>
+                <p className="text-[40px] leading-[48px] mb-[10px]">
+                  P. +62 21 858 3944
+                </p>
+                <p className="text-[40px] leading-[48px] uppercase">
+                  info@dipstrategy.co.id
+                </p>
+              </div>
+              <ul className="text-[15px] leading-[20px] uppercase flex gap-x-[20px]">
+                <li>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    Facebook
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    Twitter
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    Instagram
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    Linkedin
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="bg-black px-[60px] py-[75px]">
+            <form className="flex flex-col text-white">
+              <input
+                type="text"
+                className="flex-auto py-[14px] bg-transparent border-b border-white placeholder:uppercase placeholder:text-[rgba(255,255,255,0.5)] focus-within:outline-0 mb-[60px]"
+                placeholder="Name"
+              />
+              <input
+                type="text"
+                className="flex-auto py-[14px] bg-transparent border-b border-white placeholder:uppercase placeholder:text-[rgba(255,255,255,0.5)] focus-within:outline-0 mb-[60px]"
+                placeholder="E-mail"
+              />
+              <textarea
+                className="min-h-[120px] flex-auto py-[14px] bg-transparent border-b border-white placeholder:uppercase placeholder:text-[rgba(255,255,255,0.5)] focus-within:outline-0 mb-[60px]"
+                placeholder="Message"
+              />
+              <button
+                type="submit"
+                className="w-fit flex gap-x-[90px] items-center py-[16px] px-[20px] bg-[#FFFE55] text-black"
+              >
+                <span className="text-[15px] uppercase">Submit</span>
+                <Image
+                  src={ArrowUpRight}
+                  alt="..."
+                  className="w-[18px] h-[18px]"
+                />
+              </button>
+            </form>
           </div>
         </div>
       </div>
